@@ -28,21 +28,21 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
    
-   
-FB.ui(
-  {
-    method: 'send',
-    href: 'https://developers.facebook.com/docs/',
-  },
-  // callback
-  function(response) {
-    if (response && !response.error_message) {
-      alert('Posting completed.');
-    } else {
-      alert('Error while posting.');
-    }
-  }
-);
+function openFBui() {  
+	FB.ui(
+	{
+		method: 'send',
+		link: 'https://elizakons.github.io/public-test2/',
+	},
+	// callback
+	function(response) {
+		if (response && !response.error_message) {
+		alert('Posting completed.');
+		} else {
+		alert('Error while posting.');
+		}
+	});
+}
     
 </script>
 
