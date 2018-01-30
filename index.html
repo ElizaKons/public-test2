@@ -29,10 +29,21 @@
    }(document, 'script', 'facebook-jssdk'));
    
    
-   FB.ui({
-  method: 'send',
-  link: 'https://elizakons.github.io/public-test2/',
-});
+FB.ui(
+  {
+    method: 'share',
+    href: 'https://developers.facebook.com/docs/',
+  },
+  // callback
+  function(response) {
+    if (response && !response.error_message) {
+      alert('Posting completed.');
+    } else {
+      alert('Error while posting.');
+    }
+  }
+);
+    
 </script>
 
   <b> this is my test!!</b>
