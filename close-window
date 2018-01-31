@@ -11,5 +11,5 @@
 </head>
 
   <body>
-    https://www.facebook.com/dialog/return/close#_=_
+   <script> window.opener.shareCompleted(); </script>
   </body>
