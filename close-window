@@ -11,5 +11,5 @@
 </head>
 
   <body>
-   <script> window.opener.shareCompleted(); </script>
+   <script>if (window.location.hash.indexOf("#close-window") != -1) window.close();</script>
   </body>
